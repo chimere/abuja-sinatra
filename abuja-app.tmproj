@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>abuja-sinatra/config.ru</string>
+	<string>abuja-app.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,42 +21,28 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>abuja-sinatra/abuja-app.rb</key>
+		<key>abuja-app.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>63</integer>
 				<key>line</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>abuja-sinatra/config.ru</key>
+		<key>config.ru</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>14</integer>
+				<integer>0</integer>
 				<key>line</key>
 				<integer>1</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>abuja-sinatra/views/foo.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>25</integer>
-				<key>line</key>
-				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -66,13 +52,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>abuja-sinatra/config.ru</string>
-		<string>abuja-sinatra/abuja-app.rb</string>
-		<string>abuja-sinatra/views/foo.erb</string>
+		<string>abuja-app.rb</string>
+		<string>config.ru</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{372, 44}, {803, 525}}</string>
+	<string>{{300, 177}, {803, 525}}</string>
 </dict>
 </plist>
