@@ -9,7 +9,6 @@ require 'dm-timestamps'
 
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/abuja-maps.db")
 
-
 class Map
   
   include DataMapper::Resource
@@ -35,11 +34,17 @@ end
 
 #routes
 get '/' do
+  @title = "Abuja Maps: Prime locations in a snap!"
+  erb :welcome
 end
 
 get '/property' do
-  @title = "Abuja Maps: Prime Locations in a snap!"
+  @title = "Abuja Maps: Available reality in the city of rocks!"
   erb :welcome
+end
+
+get '/property/:id' do
+  @title = "Abuja Maps: ********"
 end
 
 get '/list' do
@@ -47,6 +52,7 @@ get '/list' do
 end
 
 get '/map' do
+  @title = "Abuja Maps: Find the nearest facilities around!"
   erb :map
 end
 
@@ -54,20 +60,18 @@ post '/pdf' do
   @title = "Create a location Pdf"
 end
 
-post '/create' do
+get '/pdf/:id' do
+end
+
+post '/property' do
   @title = "Create a new location"
 end
 
-get '/delete/:id' do
+put '/property' do
 end
 
-get '/show/:id' do
+delete '/property/:id' do
 end
-
-
-
-
-
 
 
 get '/foo' do
