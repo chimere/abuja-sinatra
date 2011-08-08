@@ -4,10 +4,10 @@ require 'rubygems'
 require 'sinatra'
 require 'sqlite3'
 require 'datamapper'
-require 'dm-core'
-require 'dm-timestamps'
+#require 'dm-core'
+#require 'dm-timestamps'
 
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/abuja-maps.db")
+DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/abuja_maps.db")
 
 class Map
   
@@ -25,7 +25,8 @@ class Map
 end
 
 #Auto create and upgrade tablesls
-DataMapper.auto_upgrade!
+# DataMapper.auto.upgrade!
+Map.auto_upgrade!
 
 #set utf-8 for outgoing
 before do
@@ -67,7 +68,7 @@ post '/property' do
   @title = "Create a new location"
 end
 
-put '/property' do
+put '/property/:id' do
 end
 
 delete '/property/:id' do

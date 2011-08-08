@@ -1,3 +1,7 @@
-require 'abuja-app'
+require 'abuja_app'
 
-run Sinatra::Application
+#using rack to start Sinatra
+#run Sinatra::Application
+
+#using shotgun to start
+run Abujaapp

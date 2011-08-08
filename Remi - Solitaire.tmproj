@@ -3,53 +3,53 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>abuja_app.rb</string>
+	<string>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/card.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>expanded</key>
 			<true/>
 			<key>name</key>
-			<string>abuja-sinatra</string>
+			<string>remi-playing-cards</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
-			<string></string>
+			<string>../Movies/remi screencasts/remi-playing-cards</string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
-		<key>abuja_app.rb</key>
+		<key>Movies/remi screencasts/remi-playing-cards/lib/playing-cards.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>56</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>9</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>25</integer>
-		</dict>
-		<key>config.ru</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>9</integer>
-				<key>line</key>
-				<integer>6</integer>
+				<integer>1</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>public/css/style.css</key>
+		<key>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/card.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>82</integer>
+		</dict>
+		<key>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/card_constants.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -63,21 +63,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>views/layout.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>6</integer>
-				<key>line</key>
-				<integer>16</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>views/list.erb</key>
+		<key>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/deck.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -89,28 +75,14 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>69</integer>
 		</dict>
-		<key>views/map.erb</key>
+		<key>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/solitaire.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>102</integer>
-				<key>line</key>
 				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>views/welcome.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>25</integer>
 				<key>line</key>
 				<integer>0</integer>
 			</dict>
@@ -122,17 +94,15 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>abuja_app.rb</string>
-		<string>config.ru</string>
-		<string>views/list.erb</string>
-		<string>views/map.erb</string>
-		<string>views/welcome.erb</string>
-		<string>views/layout.erb</string>
-		<string>public/css/style.css</string>
+		<string>Movies/remi screencasts/remi-playing-cards/lib/playing-cards.rb</string>
+		<string>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/card.rb</string>
+		<string>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/card_constants.rb</string>
+		<string>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/deck.rb</string>
+		<string>Movies/remi screencasts/remi-playing-cards/lib/playing-cards/solitaire.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{336, 173}, {803, 525}}</string>
+	<string>{{244, 132}, {803, 525}}</string>
 </dict>
 </plist>
