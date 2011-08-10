@@ -7,7 +7,15 @@ require 'datamapper'
 #require 'dm-core'
 #require 'dm-timestamps'
 
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/abuja_maps.db")
+DataMapper::setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/abuja_maps.db")
+
+#DataMapper::Database.setup({   
+#  :adapter  => 'sqlite3',
+#  :host     => 'localhost',
+#  :username => '',
+#  :password => '',
+#  :database => 'db/abujamaps'
+#})
 
 class Map
   
