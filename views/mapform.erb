@@ -1,0 +1,40 @@
+<h3>Add a new location</h3>
+
+<form action="/create" method="post" id="map">
+	<p>
+		<label>Title:</label><br />
+		<input type="text" name="map[title]" id="title" />	
+	</p>
+	<p>
+		<label>Description:</label><br />
+		<textarea "name="map[description]" id="description" cols="24"></textarea>
+	</p>
+	<p>
+		<label>House or Plot Number:</label><br />
+		<input type="text" name="map[address_number]" id="address_number" size="5"/>
+	</p>
+	<p>
+		<label>Street:</label><br />
+		<input type="text" name="map[street]" id="street" />
+	</p>
+	<p>
+		<label>Area:</label><br />
+		<input type="text" name="map[area]" id="area" />
+	</p>
+	<p>
+		<label>Longitude:</label><br />
+		<input type="text" name="map[longitude]" id="longitude" />
+	</p>
+	<p>
+		<label>Latitude:</label><br />
+		<input type="text" name="map[latitude]" id="latitude" />
+	</p>
+  <!-- <p>
+		<label>Image File:</label><br />
+		<input type="file" name="image" id="image" />
+	</p> -->
+	
+	<p>
+		<input type="submit">
+	</p>
+</form>

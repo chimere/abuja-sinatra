@@ -53,7 +53,8 @@ get '/property' do
 end
 
 get '/property/:id' do
-  @title = "Abuja Maps: ********"
+  @title = "Abuja Maps: found a new heaven"
+  erb :property
 end
 
 get '/list' do
@@ -65,6 +66,21 @@ get '/map' do
   erb :map
 end
 
+get '/mapform' do
+  @title = "Craete a new property"
+  erb :mapform
+end
+
+post '/create' do
+  @title = "Create a new location"
+  @map = Map.new(params[:map])
+  if @map.save
+    redirect "/property/#{@map.id}"
+  else
+    redirect('list')
+  end
+end
+
 post '/pdf' do
   @title = "Create a location Pdf"
 end
@@ -74,6 +90,7 @@ end
 
 post '/property' do
   @title = "Create a new location"
+  params.inspect
 end
 
 put '/property/:id' do
@@ -81,7 +98,6 @@ end
 
 delete '/property/:id' do
 end
-
 
 get '/foo' do
 	erb :foo
