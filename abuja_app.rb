@@ -23,7 +23,7 @@ class Map
   
   property :id,             Serial
   property :title,          String
-  property :description,    Text
+  property :description,    Text, :required => true
   property :address_number, Integer
   property :street,         String
   property :area,           String
@@ -43,18 +43,23 @@ end
 
 #routes
 get '/' do
-  @title = "Abuja Maps: Prime locations in a snap!"
+  @header = "Abuja Maps: Prime locations in a snap!"
   erb :welcome
 end
 
 get '/property' do
-  @title = "Abuja Maps: Available reality in the city of rocks!"
+  @header = "Abuja Maps: Available reality in the city of rocks!"
   erb :welcome
 end
 
 get '/property/:id' do
-  @title = "Abuja Maps: found a new heaven"
-  erb :property
+  @header = "Abuja Maps: found a new heaven"
+  @map = Map.get(params[:id])
+  if @map
+    erb :property
+  else
+    redirect('/list')
+  end
 end
 
 get '/list' do
@@ -62,17 +67,17 @@ get '/list' do
 end
 
 get '/map' do
-  @title = "Abuja Maps: Find the nearest facilities around!"
+  @header = "Abuja Maps: Find the nearest facilities around!"
   erb :map
 end
 
 get '/mapform' do
-  @title = "Craete a new property"
+  @header = "Craete a new property"
   erb :mapform
 end
 
 post '/create' do
-  @title = "Create a new location"
+  @header = "Create a new location"
   @map = Map.new(params[:map])
   if @map.save
     redirect "/property/#{@map.id}"
@@ -82,23 +87,23 @@ post '/create' do
 end
 
 post '/pdf' do
-  @title = "Create a location Pdf"
+  @header = "Create a location Pdf"
 end
 
 get '/pdf/:id' do
 end
 
 post '/property' do
-  @title = "Create a new location"
+  @header = "Create a new location"
   params.inspect
 end
 
 put '/property/:id' do
 end
 
-delete '/property/:id' do
-end
+# delete '/property/:id' do
+# end
 
-get '/foo' do
-	erb :foo
-end
+# get '/foo' do
+#   erb :foo
+# end
