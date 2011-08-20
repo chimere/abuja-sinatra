@@ -4,8 +4,8 @@ require 'rubygems'
 require 'sinatra'
 require 'sqlite3'
 require 'datamapper'
-#require 'dm-core'
-#require 'dm-timestamps'
+require 'dm-core'
+require 'dm-timestamps'
 
 DataMapper::setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/abuja_maps.db")
 
@@ -27,8 +27,8 @@ class Map
   property :address_number, Integer
   property :street,         String
   property :area,           String
-  property :longitude,      Integer
-  property :latitude,       Integer
+  property :longitude,      Float
+  property :latitude,       Float
   
 end
 
@@ -63,6 +63,8 @@ get '/property/:id' do
 end
 
 get '/list' do
+  @header = "Abuja Maps: Property Listings"
+  @maps = Map.all(:order => [:created_at.desc])
   erb :list
 end
 

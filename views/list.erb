@@ -1,0 +1,9 @@
+<h3>Property Listings</h3>
+
+<table border="0" cellpadding="0" cellspacing="10" class="list">
+<% @maps.each_with_index do |map,i| %>
+	<tr<%= ' class="alt"' if i%2==0 %>>
+	  <td><a href="/property/<%= map.id %>"><%= map.title %></a></td>
+		<td><a href="/property/<%= map.id %>"><%= map.description %></a></td>
+<% end %>
+</table>
