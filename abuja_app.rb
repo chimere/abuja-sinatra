@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 require 'sqlite3'
 require 'datamapper'
 require 'dm-core'
@@ -36,7 +37,7 @@ end
 # DataMapper.auto.upgrade!
 Map.auto_upgrade!
 
-#set utf-8 for outgoing
+# set utf-8 for outgoing
 before do
   headers "Content-Type" => "text/html; charset=utf-8"
 end
@@ -64,7 +65,8 @@ end
 
 get '/list' do
   @header = "Abuja Maps: Property Listings"
-  @maps = Map.all(:order => [:created_at.desc])
+  @maps = Map.all
+  #@maps = Map.all(:order => [:created_at.desc])
   erb :list
 end
 
